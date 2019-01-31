@@ -17,6 +17,13 @@ function acquireString(){
         }
     }
 
+    stringArr = string.split("");
+    stringArr = stringArr.filter(function (x, i, self) {
+        return self.indexOf(x) === i;
+    });
+    string = stringArr.join("");
+    console.log(string);
+
     return string;
 }
 
