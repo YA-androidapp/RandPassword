@@ -40,8 +40,19 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-2 offset-sm-1">
-                                <input class="form-check-input" type="checkbox" value="" id="check-lowercase-alphabet">
-                                <label class="form-check-label" for="check-lowercase-alphabet">
+                                <input class="form-check-input" type="checkbox" value="" id="check-base58">
+                                <label class="form-check-label" for="check-base58">
+                                    contains:
+                                </label>
+                            </div>
+                            <div class="col">
+                                <input type="text" id="text-base58" class="form-control" value="123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2 offset-sm-1">
+                                <input class="form-check-input" type="checkbox" value="" id="check-lowercase-alphabet" checked="checked">
+                                <label class="form-check-label active" for="check-lowercase-alphabet">
                                     contains:
                                 </label>
                             </div>
@@ -51,8 +62,8 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-2 offset-sm-1">
-                                <input class="form-check-input" type="checkbox" value="" id="check-uppercase-alphabet">
-                                <label class="form-check-label" for="check-uppercase-alphabet">
+                                <input class="form-check-input" type="checkbox" value="" id="check-uppercase-alphabet" checked="checked">
+                                <label class="form-check-label active" for="check-uppercase-alphabet">
                                     contains:
                                 </label>
                             </div>
@@ -71,13 +82,21 @@
                                 <input type="text" id="text-number" class="form-control" value="0123456789">
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-sm-9 offset-sm-3">
+                                <button type="button" id="button-gen" class="btn btn-primary btn-block">Generate</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
                 <div class="card-footer text-muted">
                     <h5 class="card-title">Result:</h5>
                     <div class="row">
-                        <div class="col offset-sm-3">
-                            <input type="text" id="tresult" class="form-control" value="">
+                        <div class="col-sm-6 offset-sm-3">
+                            <input type="text" id="result" class="form-control" value="">
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" id="button-copy" class="btn btn-secondary">Copy</button>
                         </div>
                     </div>
                 </div>
