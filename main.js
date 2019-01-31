@@ -22,7 +22,6 @@ function acquireString(){
         return self.indexOf(x) === i;
     });
     string = stringArr.join("");
-    console.log(string);
 
     return string;
 }
